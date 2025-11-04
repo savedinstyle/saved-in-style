@@ -1,0 +1,77 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>saved in style</title>
+  <link rel="stylesheet" href="/assets/style.css">
+</head>
+
+<body>
+  
+<header class="site_header">
+  
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 820 180" role="img" aria-label="saved in style logo" class="logo_svg">
+  <!-- Halo over the first 's' in saved -->
+  <ellipse cx="85" cy="28" rx="65" ry="14" fill="none" stroke="#D4AF37" stroke-width="6"/>
+  <!-- Text -->
+  <g fill="#B30000">
+    <text x="20" y="110" style="font-family: 'Brush Script MT', 'Lucida Handwriting', cursive; font-size: 120px; font-style: italic;">
+      saved in style
+    </text>
+  </g>
+  <!-- Convert both s characters to styled non cursive shape by overlaying path outlines -->
+  <!-- First 's' overlay -->
+  <g transform="translate(55,20)">
+    <path d="M0,70 C0,40 35,40 35,55 C35,65 25,68 15,70 C6,72 0,75 0,85 C0,100 18,102 35,98" fill="none" stroke="#B30000" stroke-width="10" stroke-linecap="round"/>
+  </g>
+  <!-- The 's' in style overlay -->
+  <g transform="translate(475,20)">
+    <path d="M0,70 C0,40 35,40 35,55 C35,65 25,68 15,70 C6,72 0,75 0,85 C0,100 18,102 35,98" fill="none" stroke="#B30000" stroke-width="10" stroke-linecap="round"/>
+  </g>
+  <!-- Gold charm dangling off the 'd' -->
+  <g>
+    <!-- thin line from the tail of 'd' -->
+    <line x1="390" y1="120" x2="390" y2="150" stroke="#D4AF37" stroke-width="3"/>
+    <!-- star charm -->
+    <polygon points="390,165 396,177 410,178 399,187 403,200 390,193 377,200 381,187 370,178 384,177"
+             fill="#D4AF37"/>
+  </g>
+</svg>
+
+  <nav class="site_nav">
+    <button class="menu_toggle" aria-label="open menu" onclick="toggleMenu()">☰</button>
+    <ul id="menu">
+      <li><a href="/index.html">Home</a></li>
+      <li><a href="/about.html">About</a></li>
+      <li><a href="/posts.html">Posts</a></li>
+      <li><a href="/contact.html">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+  <main class="container">
+    <h1>contact</h1>
+    <p>say hi and share your outfit wins.</p>
+    <form class="contact_form" onsubmit="event.preventDefault(); alert('thank you for the message');">
+      <label>name
+        <input type="text" required>
+      </label>
+      <label>email
+        <input type="email" required>
+      </label>
+      <label>message
+        <textarea rows="5" required></textarea>
+      </label>
+      <button class="btn_primary" type="submit">send</button>
+    </form>
+  </main>
+  
+<footer class="site_footer">
+  <p>© <span id="year"></span> saved in style. all rights reserved.</p>
+</footer>
+<script src="/assets/script.js"></script>
+
+</body>
+</html>
